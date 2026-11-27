@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Contact Us | IT Services Hobart</title>
+<meta content="Contact IT Services Hobart for web development, mobile apps, software, digital marketing, business email, hosting and onsite technical support." name="description"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--dark:#241f21;--orange:#ee4423;--ink:#071725;--muted:#777b80;--shell:1360px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font-family:'Manrope',Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+.shell{width:min(var(--shell),calc(100% - 72px));margin:auto}
+.contact-hero{height:clamp(580px,72svh,690px);min-height:580px;position:relative;overflow:visible;background:var(--dark);color:#fff}
+.contact-hero .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.62)}
+.contact-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,17,.64),rgba(20,16,17,.30) 45%,rgba(20,16,17,.72));pointer-events:none}
+.nav{height:88px;position:relative;z-index:100002;display:flex;align-items:center;justify-content:space-between;overflow:visible!important}
+.nav .logo{display:inline-flex!important;align-items:center!important;justify-content:center!important;width:218px!important;height:70px!important;background:transparent!important;box-shadow:none!important;overflow:hidden!important}
+.navbar-brand-logo{display:block;width:100%;height:100%;object-fit:contain}
+.nav-links{display:flex;align-items:center;gap:32px;font-size:15px;font-weight:650}
+.nav-links>a{color:#fff}.nav .phone{padding:14px 22px;border-radius:99px;background:var(--orange);font-weight:800}
+.contact-hero-content{position:relative;z-index:3;width:min(var(--shell),calc(100% - 72px));height:calc(100% - 88px);margin:auto}
+.contact-title{position:absolute;left:0;top:18%;margin:0;font-size:clamp(72px,7vw,112px);font-weight:500;line-height:.92;letter-spacing:-.065em}
+.contact-arrow{position:absolute;left:8px;top:51%;font-size:48px;line-height:1}
+.hero-talk{position:absolute;right:0;top:22%;min-width:220px;min-height:70px;border:1px solid rgba(255,255,255,.62);border-radius:999px;display:grid;place-items:center;font-size:18px;font-weight:800}
+.contact-form-section{position:relative;z-index:5;margin-top:-112px;padding:0 0 96px}
+.contact-panel{width:min(1220px,calc(100% - 40px));margin:auto;background:#f3f4f6;border-radius:42px;padding:62px 62px 60px;box-shadow:0 16px 46px rgba(7,23,37,.06)}
+.contact-panel h2{margin:0 0 18px;font-size:clamp(56px,5.3vw,82px);font-weight:500;line-height:1;letter-spacing:-.058em;color:#05070a}
+.contact-intro{margin:0 0 58px;font-size:clamp(22px,2vw,31px);line-height:1.35;letter-spacing:-.025em;color:#74777b}
+.contact-intro a{border-bottom:1px solid #9fa4a8}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:46px 50px}
+.field{position:relative;min-width:0}.field.full{grid-column:1/-1}
+.field label{display:block;margin:0 0 9px;color:#8a8e91;font-size:18px;font-weight:500}
+.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1px solid #c9cdd0;border-radius:0;background:transparent;color:#151a20;padding:9px 0 14px;font:500 20px/1.35 'Manrope',Arial,sans-serif;outline:0}
+.field textarea{height:150px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-bottom-color:var(--orange);box-shadow:0 1px 0 var(--orange)}
+.phone-row{display:grid;grid-template-columns:120px 1fr;gap:16px}.field select{appearance:none;cursor:pointer}
+.form-status{grid-column:1/-1;min-height:20px;color:#b43e22;font-size:14px;font-weight:700}.form-status.success{color:#167747}
+.send-button{grid-column:1/-1;justify-self:start;min-width:278px;min-height:78px;border:1px solid #17212b;border-radius:999px;background:transparent;color:#071725;font:700 18px/1 'Manrope',Arial,sans-serif;cursor:pointer;transition:.25s}
+.send-button:hover{background:var(--orange);border-color:var(--orange);color:#fff;transform:translateY(-2px)}
+@media(max-width:860px){.shell,.contact-hero-content{width:calc(100% - 36px)}.nav .nav-links{display:none}.contact-title{top:20%;font-size:70px}.hero-talk{top:auto;bottom:115px;left:0;right:auto}.contact-arrow{top:48%}.contact-panel{padding:52px 34px}}
+@media(max-width:680px){.contact-hero{height:620px;min-height:620px}.nav .logo{width:154px!important;height:54px!important}.contact-title{font-size:56px;top:20%}.contact-arrow{top:43%}.hero-talk{bottom:100px;min-width:190px;min-height:60px}.contact-form-section{margin-top:-62px;padding-bottom:58px}.contact-panel{width:calc(100% - 14px);border-radius:28px;padding:44px 20px 46px}.contact-panel h2{font-size:48px}.contact-intro{font-size:21px;margin-bottom:42px}.contact-form{grid-template-columns:1fr;gap:34px}.field.full,.form-status,.send-button{grid-column:1}.phone-row{grid-template-columns:98px 1fr}.send-button{width:100%;min-width:0}}
+</style>
+<style id="services-mega-menu-styles">
+/* Navbar dimensions and colours intentionally remain from the uploaded index.html. */
+.nav.shell{overflow:visible!important}.services-trigger{display:inline-flex;align-items:center;gap:6px}.nav-chevron{display:inline-flex;align-items:center;justify-content:center;width:11px;height:7px;flex:none;color:currentColor;transition:transform .25s ease}.nav-chevron svg{display:block;width:11px;height:7px}.nav.is-mega-open .nav-chevron{transform:rotate(180deg)}.services-mega{position:absolute;top:calc(100% + 10px);left:50%;transform:translate(-50%,-10px);width:min(1240px,calc(100vw - 28px));display:grid;grid-template-columns:300px minmax(500px,1fr) 270px;gap:20px;padding:14px;border:1px solid rgba(25,43,51,.09);border-radius:24px;background:#fff;box-shadow:0 28px 75px rgba(10,26,37,.2);opacity:0;visibility:hidden;pointer-events:none;transition:.28s ease;overflow:hidden;color:#192b33;font-family:var(--ref-font,Arial,sans-serif)}.nav.is-mega-open .services-mega{opacity:1;visibility:visible;transform:translate(-50%,0);pointer-events:auto}.mega-category-list{display:flex;flex-direction:column;gap:10px;padding:12px;border-radius:20px;background:#edf3fa}.mega-category{width:100%;min-height:62px;display:grid;grid-template-columns:44px 1fr 22px;align-items:center;gap:12px;padding:9px 13px;border:0;border-radius:14px;background:transparent;color:#192b33;text-align:left;font:750 15px/1.15 var(--ref-font,Arial,sans-serif);cursor:pointer}.mega-category b{font-size:22px;opacity:0}.mega-category:hover,.mega-category.is-active{background:#192b33;color:#fff}.mega-category:hover b,.mega-category.is-active b{opacity:1}.mega-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:#0d355a;color:#f15a26;font-size:13px;font-weight:800}.mega-content{position:relative;min-height:336px;padding:7px 0}.mega-panel{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-content:start;opacity:0;visibility:hidden;transform:translateX(18px);transition:.32s ease}.mega-panel.is-active{opacity:1;visibility:visible;transform:none}.mega-panel>a{min-height:110px;display:grid;grid-template-columns:44px 1fr 24px;align-items:center;gap:14px;padding:22px 18px;border-bottom:1px solid #e6ebef;color:#192b33;text-decoration:none}.mega-panel>a:nth-child(odd){border-right:1px solid #e6ebef}.mega-service-icon{color:#f15a26;font-size:27px}.mega-panel strong{display:block;font-size:17px;line-height:1.22}.mega-panel small{display:block;margin-top:5px;color:#536773;font-size:14px;line-height:1.38}.mega-panel i{font-style:normal;font-size:20px}.mega-visual{position:relative;display:block;min-height:336px;overflow:hidden;border-radius:20px;background:#192b33;color:#fff}.mega-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:25px;background:linear-gradient(145deg,#28434e,#192b33 64%,#f15a26);opacity:0;transform:translateX(42px) scale(1.025);transition:opacity .34s ease,transform .56s cubic-bezier(.2,.8,.2,1)}.mega-placeholder.is-active{opacity:1;transform:none}.mega-placeholder:before{content:'';position:absolute;inset:23px 23px 98px;border:1px dashed rgba(255,255,255,.43);border-radius:15px}.mega-placeholder span,.mega-placeholder small{position:relative;z-index:1}.mega-placeholder span{font-size:26px;font-weight:800;line-height:1.02}.mega-placeholder small{margin-top:8px;color:rgba(255,255,255,.75);font-size:13px}.mega-visual-arrow{position:absolute;z-index:5;top:17px;right:17px;display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#f15a26;color:#fff;font-size:24px}.nav-mobile-toggle{display:none}@media(max-width:860px){.nav-mobile-toggle{display:grid;place-items:center;width:42px;height:42px;margin-left:auto;border:0;border-radius:10px;background:#fff;color:#192b33}.nav .nav-links{display:none}.nav.is-mobile-open .nav-links{display:flex}.services-mega{position:static;display:none;width:100%;grid-template-columns:1fr;transform:none}.nav.is-mega-open .services-mega{display:grid;transform:none}.mega-content{min-height:430px}.mega-visual{min-height:220px}.mega-category-list{display:grid;grid-template-columns:1fr 1fr}}@media(max-width:520px){.mega-category-list{grid-template-columns:1fr}.mega-panel{position:relative;display:none;grid-template-columns:1fr}.mega-panel.is-active{display:grid}.mega-content{min-height:0}}
+</style>
+<style id="services-mega-layer-fix">nav.nav.shell{z-index:2147483000!important;isolation:isolate!important;overflow:visible!important}nav.nav.shell .services-mega{z-index:2147483001!important;isolation:isolate!important;overflow:hidden!important;background:#fff!important;color:#192b33!important;mix-blend-mode:normal!important;filter:none!important;clip-path:none!important}nav.nav.shell .services-mega *,nav.nav.shell .services-mega *::before,nav.nav.shell .services-mega *::after{box-sizing:border-box!important;mix-blend-mode:normal!important;text-shadow:none!important}nav.nav.shell .mega-category-list,nav.nav.shell .mega-content,nav.nav.shell .mega-visual{position:relative!important;z-index:2!important}nav.nav.shell .mega-panel{overflow:hidden!important;background:#fff!important}nav.nav.shell .mega-panel>a{overflow:hidden!important;background:#fff!important}nav.nav.shell .mega-panel strong,nav.nav.shell .mega-panel small,nav.nav.shell .mega-panel i,nav.nav.shell .mega-service-icon,nav.nav.shell .mega-category span,nav.nav.shell .mega-category b{visibility:visible!important;filter:none!important;clip-path:none!important;animation:none!important}nav.nav.shell .mega-placeholder span,nav.nav.shell .mega-placeholder small{visibility:visible!important;animation:none!important}</style>
+<style id="mega-menu-project-thumbnail-images">
+.services-mega .mega-placeholder{position:absolute!important;inset:0!important;overflow:hidden!important;background:#17242b!important}
+.services-mega .mega-project-thumbnail{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center!important;z-index:0!important}
+.services-mega .mega-placeholder::after{content:""!important;position:absolute!important;inset:35% 0 0!important;background:linear-gradient(180deg,rgba(7,17,22,0),rgba(7,17,22,.56) 38%,rgba(7,17,22,.94) 100%)!important;z-index:1!important;pointer-events:none!important}
+.services-mega .mega-placeholder>span{position:absolute!important;left:20px!important;right:20px!important;bottom:20px!important;z-index:2!important;color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.5)!important}
+.services-mega .mega-visual-arrow{z-index:3!important}
+</style>
+<style id="support-service-image-crop">
+.services-mega .mega-support-thumbnail{
+  object-fit:cover!important;
+  object-position:53% 48%!important;
+  transform:scale(1.06)!important;
+}
+</style>
+<style id="navbar-logo-no-white-box">
+/* Navbar logo: remove the white box, let the logo sit directly on the hero. */
+.nav .logo{
+  background:transparent!important;
+  border-radius:0!important;
+  padding:0!important;
+  box-shadow:none!important;
+}
+</style>
+<style id="hobart-location-section-style">
+.locations-section{padding:98px 0 112px;background:#fff;color:#05070a}
+.locations-shell{width:min(1220px,calc(100% - 72px));margin:auto}
+.locations-head{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(520px,1.22fr);gap:90px;align-items:start;margin-bottom:78px}
+.locations-head h2{margin:0;font-size:clamp(58px,5.1vw,80px);font-weight:500;line-height:1;letter-spacing:-.06em}
+.locations-head p{margin:0;max-width:760px;font-size:clamp(30px,3vw,47px);font-weight:400;line-height:1.13;letter-spacing:-.05em}
+.locations-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.location-item{padding-top:0;border-top:0}
+.location-item h3{margin:0 0 22px;font-size:clamp(42px,4vw,62px);line-height:1;font-weight:700;letter-spacing:-.055em}
+.location-item address{margin:0;color:#686d70;font-style:normal;font-size:clamp(21px,1.8vw,28px);line-height:1.52;letter-spacing:-.03em}
+.location-links{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-top:24px}
+.location-links a{color:#686d70;font-size:18px;font-weight:600;line-height:1.4;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+@media(max-width:860px){.locations-section{padding:80px 0 90px}.locations-shell{width:calc(100% - 40px)}.locations-head{grid-template-columns:1fr;gap:36px;margin-bottom:58px}.locations-grid{gap:42px}}
+@media(max-width:680px){.locations-section{padding:62px 0 72px}.locations-shell{width:calc(100% - 28px)}.locations-head{margin-bottom:46px}.locations-head h2{font-size:50px}.locations-head p{font-size:28px}.locations-grid{grid-template-columns:1fr;gap:46px}.location-item{padding-top:0}.location-item h3{font-size:42px}.location-item address{font-size:20px}}
+</style><style id="contact-faq-style">
+/* FAQ uses the exact charcoal tone and broad curved top edge from the supplied reference. */
+.contact-faq{
+  position:relative;
+  isolation:isolate;
+  margin-top:0;
+  padding:148px 0 116px;
+  background:#241f21;
+  color:#fff;
+  overflow:hidden;
+  border-radius:110px 110px 0 0;
+}
+.contact-faq-shell{position:relative;z-index:1;width:min(1220px,calc(100% - 72px));margin:auto}
+.contact-faq-head{display:grid;grid-template-columns:minmax(260px,.78fr) minmax(520px,1.22fr);gap:90px;align-items:start;margin-bottom:68px}
+.contact-faq-head h2{margin:0;font-size:clamp(58px,5.1vw,80px);font-weight:500;line-height:1;letter-spacing:-.06em}
+.contact-faq-head p{margin:0;max-width:760px;color:rgba(255,255,255,.72);font-size:clamp(28px,2.7vw,43px);font-weight:400;line-height:1.16;letter-spacing:-.045em}
+.contact-faq-list{border-top:1px solid rgba(255,255,255,.18)}
+.contact-faq-item{border-bottom:1px solid rgba(255,255,255,.18)}
+.contact-faq-question{width:100%;display:grid;grid-template-columns:52px 1fr 44px;gap:18px;align-items:center;padding:30px 0;border:0;background:transparent;color:#fff;text-align:left;cursor:pointer;font:600 clamp(21px,1.8vw,28px)/1.25 'Manrope',Arial,sans-serif}
+.contact-faq-number{color:#f15a26;font-size:14px;font-weight:800;letter-spacing:.1em}
+.contact-faq-icon{position:relative;width:28px;height:28px;justify-self:end}
+.contact-faq-icon:before,.contact-faq-icon:after{content:"";position:absolute;left:5px;right:5px;top:13px;height:2px;background:#f15a26;transition:transform .28s ease}
+.contact-faq-icon:after{transform:rotate(90deg)}
+.contact-faq-item.is-open .contact-faq-icon:after{transform:rotate(0)}
+.contact-faq-answer{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.contact-faq-item.is-open .contact-faq-answer{grid-template-rows:1fr}
+.contact-faq-answer-inner{overflow:hidden}
+.contact-faq-answer p{max-width:900px;margin:0;padding:0 62px 30px 70px;color:rgba(255,255,255,.72);font-size:18px;line-height:1.7}
+@media(max-width:860px){
+ .contact-faq{padding:118px 0 92px;border-radius:76px 76px 0 0}
+ .contact-faq-shell{width:calc(100% - 40px)}
+ .contact-faq-head{grid-template-columns:1fr;gap:34px;margin-bottom:52px}
+}
+@media(max-width:680px){
+ .contact-faq{padding:88px 0 72px;border-radius:46px 46px 0 0}
+ .contact-faq-shell{width:calc(100% - 28px)}
+ .contact-faq-head{margin-bottom:40px}
+ .contact-faq-head h2{font-size:50px}
+ .contact-faq-head p{font-size:27px}
+ .contact-faq-question{grid-template-columns:36px 1fr 30px;gap:10px;padding:24px 0;font-size:20px}
+ .contact-faq-answer p{padding:0 0 24px 46px;font-size:16px}
+}
+</style><style>
+.work-together{background:#031425;color:#fff;padding:112px 0 118px;position:relative;overflow:hidden}.work-together:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 35%,rgba(241,90,38,.09),transparent 30%),radial-gradient(circle at 78% 60%,rgba(52,150,180,.08),transparent 28%);pointer-events:none}.work-inner{position:relative;z-index:1;width:min(1220px,calc(100% - 72px));margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:96px;align-items:center;min-height:460px}.work-title{font-size:92px;line-height:.93;letter-spacing:-5.5px;margin:0;max-width:620px;font-weight:400}.work-title strong{display:block;font-weight:800}.work-copy p{font-size:30px;line-height:1.25;letter-spacing:-1px;color:#c3ced8;margin:0 0 40px;max-width:560px}.work-cta{display:inline-flex;min-width:430px;min-height:82px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.82);border-radius:999px;color:#fff;text-decoration:none;font-size:19px;font-weight:700;transition:background .28s ease,border-color .28s ease,transform .28s ease}.work-cta:hover{background:#f15a26;border-color:#f15a26;transform:translateY(-2px)}.work-contact{display:flex;gap:26px;flex-wrap:wrap;margin-top:28px;color:#92a3b2;font-size:14px}.work-contact a{color:inherit;text-decoration:none}.work-contact a:hover{color:#fff}
+@media(max-width:980px){.work-together{padding:88px 0 96px}.work-inner{grid-template-columns:1fr;gap:45px;min-height:0}.work-title{font-size:74px}.work-copy p{font-size:26px}.work-cta{min-width:min(430px,100%)}}
+@media(max-width:620px){.work-together{padding:70px 0 78px}.work-inner{width:calc(100% - 32px);gap:34px}.work-title{font-size:54px;letter-spacing:-3px}.work-copy p{font-size:21px;line-height:1.35;margin-bottom:28px}.work-cta{width:100%;min-width:0;min-height:66px;padding:0 20px;font-size:15px;text-align:center}.work-contact{gap:14px;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.work-cta{transition:none}}
+</style><style>
+/* Final IT Services Hobart sitemap footer */
+.hobart-sitemap-footer{position:relative;background:#031425;color:#fff;padding:82px max(48px,7vw) 0;overflow:hidden}
+.hobart-sitemap-footer:before{content:"";position:absolute;left:4%;right:34%;bottom:-28%;height:108%;opacity:.14;background:radial-gradient(ellipse at 55% 55%,rgba(241,90,38,.2),transparent 58%),repeating-radial-gradient(ellipse at 55% 55%,rgba(255,255,255,.16) 0 1px,transparent 1px 18px);transform:rotate(-9deg);pointer-events:none}
+.hobart-sitemap-grid{position:relative;z-index:1;width:min(1260px,100%);margin:auto;display:grid;grid-template-columns:1.25fr .82fr 1.08fr 1fr 1.05fr;gap:46px;padding-bottom:74px}
+.hobart-sitemap-col h3{font-size:16px;line-height:1.2;letter-spacing:.025em;text-transform:uppercase;margin:0 0 26px;font-weight:800}
+.hobart-sitemap-col a,.hobart-sitemap-col p{display:block;color:#d7dee5;text-decoration:none;font-size:15px;line-height:1.55;margin:0 0 10px}
+.hobart-sitemap-col a{transition:color .22s ease,transform .22s ease}.hobart-sitemap-col a:hover{color:#f15a26;transform:translateX(3px)}
+.hobart-office p{font-size:20px;line-height:1.38;color:#fff;margin-bottom:20px;max-width:270px}.hobart-office .hobart-footer-logo{display:block;width:168px;max-width:100%;height:auto;margin:20px 0;padding:0;border-radius:0;background:transparent;box-shadow:none}.hobart-office .contact-link{color:#fff;font-size:17px;margin-bottom:12px}
+.hobart-sitemap-bottom{position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.3);min-height:96px;display:flex;align-items:center;justify-content:center;text-align:center;color:#c6d0d8;font-size:14px}.hobart-sitemap-bottom strong{color:#fff;font-weight:700}
+@media(max-width:1050px){.hobart-sitemap-footer{padding-top:70px}.hobart-sitemap-grid{grid-template-columns:1.2fr 1fr 1fr;gap:50px 38px}.hobart-office{grid-row:span 2}}
+@media(max-width:720px){.hobart-sitemap-footer{padding:60px 24px 0}.hobart-sitemap-grid{grid-template-columns:1fr 1fr;gap:42px 28px;padding-bottom:56px}.hobart-office{grid-column:1/-1;grid-row:auto}.hobart-sitemap-bottom{min-height:84px;font-size:13px}}
+@media(max-width:470px){.hobart-sitemap-grid{grid-template-columns:1fr}.hobart-sitemap-col h3{margin-bottom:18px}.hobart-sitemap-bottom{padding:22px 0}}
+@media(prefers-reduced-motion:reduce){.hobart-sitemap-col a{transition:none}}
+</style><style>
+/* Final targeted production pass: section-start curves, form layout, typography */
+:root{
+  --prod-font: Arial, Helvetica, sans-serif;
+  --prod-ink:#071725;
+  --prod-muted:#66737d;
+  --prod-orange:#f15a26;
+  --prod-curve:118px;
+}
+body{font-family:var(--prod-font);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+
+/* Curves exist only at the start of a section where the background colour changes.
+   The section remains full device width, so no permanent left/right rails appear. */
+.featured-projects,
+.audience-section,
+.delivery-framework,
+.blog-insights,
+.hobart-sitemap-footer{
+  width:100%!important;
+  max-width:none!important;
+  margin-left:0!important;
+  margin-right:0!important;
+  border-radius:var(--prod-curve) var(--prod-curve) 0 0!important;
+  overflow:hidden;
+}
+/* Adjacent same-colour surfaces remain continuous, without extra curves. */
+.client-voices,.work-together{border-radius:0!important}
+
+/* Production typography hierarchy without changing section content. */
+:is(.cap-top,.services-intro,.framework-head,.voices-head,.audience-intro,.blog-head) h2{
+  font-family:var(--prod-font);
+  font-size:clamp(48px,5vw,76px)!important;
+  line-height:.98!important;
+  letter-spacing:-.045em!important;
+  font-weight:700!important;
+}
+:is(.cap-top,.services-intro,.projects-head,.framework-head,.voices-head,.audience-intro) > p,
+.framework-head > p,.voices-head > p{
+  font-size:clamp(22px,2.55vw,40px)!important;
+  line-height:1.18!important;
+  letter-spacing:-.025em!important;
+}
+.reason-card h3,.project-meta h3,.voice-card h3,.audience-copy h3,.blog-content h3{
+  line-height:1.14!important;
+  letter-spacing:-.025em!important;
+}
+.reason-card p,.project-meta p,.voice-card p,.audience-copy p,.blog-excerpt{
+  line-height:1.55!important;
+}
+
+@media(max-width:1100px){:root{--prod-curve:82px}}
+@media(max-width:720px){:root{--prod-curve:48px}}
+</style><style>
+/* Targeted correction: clean edge-to-edge section starts. */
+.delivery-framework{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  border-radius:96px 96px 0 0!important;
+  overflow:hidden!important;
+  padding-top:112px!important;
+}
+.audience-section,.hobart-sitemap-footer{border-radius:0!important}
+@media(max-width:900px){
+ .delivery-framework{border-radius:68px 68px 0 0!important;padding-top:88px!important}
+}
+@media(max-width:680px){
+ .delivery-framework{border-radius:38px 38px 0 0!important;padding-top:68px!important}
+}
+</style><style>
+.delivery-framework,
+.audience-section,
+.hobart-sitemap-footer{
+  border-radius:0!important;
+}
+</style><style id="softwareco-reference-production-pass">
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* Reference-matched type and spacing system. Brand colours and copy remain unchanged. */
+:root{
+  --ref-font:'Manrope',Arial,Helvetica,sans-serif;
+  --ref-shell:1360px;
+  --ref-h1:clamp(62px,6.35vw,104px);
+  --ref-h2:clamp(52px,5.15vw,82px);
+  --ref-intro:clamp(25px,2.55vw,42px);
+  --ref-h3:clamp(25px,2.05vw,34px);
+  --ref-body:clamp(16px,1.18vw,19px);
+  --ref-section-y:132px;
+  --ref-section-y-tablet:96px;
+  --ref-section-y-mobile:68px;
+  --ref-curve:118px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ref-font)!important;font-weight:400;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+button,input,select,textarea{font-family:var(--ref-font)!important}
+.shell{width:min(var(--ref-shell),calc(100% - 72px))!important}
+
+/* Hero */
+.hero{min-height:760px;height:100svh;max-height:900px}
+.hero-copy{top:clamp(132px,16vh,170px);width:min(1080px,92%)}
+.hero h1{font-size:var(--ref-h1)!important;line-height:.92!important;letter-spacing:-.065em!important;font-weight:700!important;margin-bottom:28px!important;text-wrap:balance}
+.hero-copy p{max-width:820px!important;font-size:clamp(19px,1.55vw,25px)!important;line-height:1.42!important;letter-spacing:-.018em!important}
+.hero-note{font-size:clamp(22px,1.85vw,30px)!important;line-height:1.25!important;letter-spacing:-.025em!important}
+.nav-links{font-size:14px!important;font-weight:600!important;letter-spacing:-.01em!important}
+.logo-copy{font-family:var(--ref-font)!important}
+
+/* Shared section rhythm */
+.reasons,.services-showcase,.delivery-framework,.client-voices,.audience-section,.blog-insights{padding-top:var(--ref-section-y)!important;padding-bottom:var(--ref-section-y)!important}
+.featured-projects{padding-top:var(--ref-section-y)!important;padding-bottom:var(--ref-section-y)!important}
+.framework-head,.voices-head,.blog-head{margin-bottom:78px!important}
+.reason-head,.services-intro,.projects-head,.audience-intro{margin-bottom:78px!important}
+
+/* Shared editorial headers */
+.reason-head,.services-intro,.projects-head,.audience-intro{
+  grid-template-columns:minmax(280px,.74fr) minmax(0,1.26fr)!important;
+  gap:clamp(64px,7vw,116px)!important;
+  align-items:start!important;
+}
+.reason-head h2,.services-intro h2,.framework-head h2,.voices-head h2,.audience-intro h2,.blog-head h2{
+  font-family:var(--ref-font)!important;
+  font-size:var(--ref-h2)!important;
+  line-height:.96!important;
+  letter-spacing:-.055em!important;
+  font-weight:700!important;
+  margin-top:0!important;
+  text-wrap:balance;
+}
+.reason-head p,.services-intro p,.projects-head p,.framework-head p,.voices-head p,.audience-intro p{
+  font-size:var(--ref-intro)!important;
+  line-height:1.16!important;
+  letter-spacing:-.035em!important;
+  font-weight:400!important;
+  color:inherit;
+  text-wrap:pretty;
+}
+.framework-head,.voices-head,.blog-head{width:min(980px,calc(100% - 72px))!important}
+
+/* Card typography */
+.reason-card h3,.service-detail h3,.project-meta h3,.framework-title h3,.featured-quote h3,.voice-card h3,.audience-copy h3,.blog-content h3{
+  font-family:var(--ref-font)!important;
+  font-size:var(--ref-h3)!important;
+  line-height:1.12!important;
+  letter-spacing:-.04em!important;
+  font-weight:650!important;
+}
+.reason-card p,.service-detail p,.project-meta p,.framework-copy p,.featured-quote>p,.voice-card>p,.audience-copy p,.blog-excerpt{
+  font-family:var(--ref-font)!important;
+  font-size:var(--ref-body)!important;
+  line-height:1.55!important;
+  letter-spacing:-.012em!important;
+}
+.projects-kicker,.framework-kicker,.voices-kicker,.blog-kicker,.blog-category{
+  font-family:var(--ref-font)!important;
+  font-size:12px!important;
+  line-height:1!important;
+  letter-spacing:.14em!important;
+  font-weight:800!important;
+}
+
+/* Reasons and capability cards */
+.reason-card{height:440px!important;padding:52px 54px!important;border-radius:28px!important}
+.reason-card h3{margin-bottom:18px!important}
+.reason-card p{max-width:400px}
+.reason-card b{font-size:11px!important;letter-spacing:.16em!important}
+
+/* Services scroll proportions */
+.services-intro{padding-bottom:12px}
+.service-number{font-size:clamp(92px,8vw,132px)!important;line-height:.76!important}
+.service-index-item{font-family:var(--ref-font)!important;font-size:clamp(14px,1.08vw,18px)!important;line-height:1.2!important}
+.service-detail h3{font-size:clamp(38px,3.4vw,56px)!important;line-height:1.02!important}
+.service-detail p{font-size:clamp(17px,1.45vw,22px)!important;line-height:1.48!important}
+.service-slide{border-radius:24px!important}
+.services-cta a,.projects-footer a,.voices-cta a,.blog-footer a{font-family:var(--ref-font)!important;font-size:15px!important;font-weight:700!important;letter-spacing:.025em!important}
+
+/* Featured projects reference-like scale */
+.featured-projects{border-radius:var(--ref-curve) var(--ref-curve) 0 0!important}
+.project-grid{width:min(1120px,calc(100% - 72px))!important;gap:108px 78px!important}
+.project-card:nth-child(even){transform:translateY(88px)!important}
+.project-image{border-radius:26px!important}
+.project-meta{padding-top:24px!important}
+.project-meta p{font-size:16px!important;color:#aeb8c4!important}
+.projects-footer{margin-top:168px!important}
+
+/* Accordion / framework */
+.delivery-framework{border-radius:var(--ref-curve) var(--ref-curve) 0 0!important}
+.framework-layout{width:min(1180px,calc(100% - 72px))!important;gap:92px!important}
+.framework-list{min-height:440px!important}
+.framework-visual{height:520px!important;border-radius:22px 22px 22px 220px!important}
+.framework-copy p{max-width:540px!important}
+
+/* Testimonials */
+.client-voices{padding-top:var(--ref-section-y)!important}
+.video-testimonial{border-radius:28px!important;padding:26px!important;gap:34px!important}
+.voice-grid{gap:24px!important;margin-top:24px!important}
+.voice-card{border-radius:26px!important;padding:32px 28px!important;min-height:350px!important}
+
+/* Who we help */
+.audience{padding-top:var(--ref-section-y)!important;padding-bottom:var(--ref-section-y)!important}
+.audience-intro,.list{width:min(1160px,calc(100% - 72px))!important}
+.row,.row.active{min-height:108px!important}
+.title{font-family:var(--ref-font)!important;font-weight:650!important;letter-spacing:-.04em!important}
+
+/* Blogs */
+.blog-insights{border-radius:var(--ref-curve) var(--ref-curve) 0 0!important}
+.blog-list{width:min(1080px,calc(100% - 72px))!important}
+.blog-row{gap:64px!important;margin-bottom:72px!important}
+.blog-image{border-radius:24px!important}
+.blog-content h3{font-size:clamp(30px,2.55vw,42px)!important}
+.blog-content .blog-excerpt{color:#aeb8c4!important}
+.blog-footer{margin-top:70px!important}
+
+/* Dark CTA */
+.work-together{padding-top:var(--ref-section-y)!important;padding-bottom:var(--ref-section-y)!important}
+.work-inner{min-height:420px!important;gap:104px!important}
+.work-title{font-family:var(--ref-font)!important;font-size:clamp(64px,6vw,96px)!important;line-height:.93!important;letter-spacing:-.06em!important}
+.work-copy p{font-family:var(--ref-font)!important;font-size:clamp(24px,2.15vw,34px)!important;line-height:1.28!important;letter-spacing:-.035em!important}
+.work-cta{font-family:var(--ref-font)!important;font-size:16px!important;font-weight:700!important}
+
+/* Footer */
+.hobart-sitemap-footer{padding-top:86px!important}
+.hobart-sitemap-col h3{font-family:var(--ref-font)!important;font-size:14px!important;letter-spacing:.08em!important;font-weight:800!important}
+.hobart-sitemap-col a,.hobart-sitemap-col p{font-family:var(--ref-font)!important;font-size:14px!important;line-height:1.65!important}
+
+@media(max-width:1100px){
+  :root{--ref-section-y:var(--ref-section-y-tablet);--ref-curve:82px}
+  .reason-head,.services-intro,.projects-head,.audience-intro{gap:52px!important}
+  .project-grid{gap:84px 34px!important}
+  .framework-layout{gap:46px!important}
+  .hero{min-height:700px}
+}
+@media(max-width:900px){
+  .reason-head,.services-intro,.projects-head,.audience-intro{grid-template-columns:1fr!important;gap:24px!important}
+  .reason-head p,.services-intro p,.projects-head p,.audience-intro p{max-width:760px}
+  .framework-head,.voices-head,.blog-head{width:calc(100% - 44px)!important}
+  .framework-layout{width:calc(100% - 44px)!important}
+}
+@media(max-width:680px){
+  :root{--ref-section-y:var(--ref-section-y-mobile);--ref-curve:48px}
+  .shell{width:calc(100% - 32px)!important}
+  .hero{height:720px;min-height:720px;max-height:none}
+  .hero h1{font-size:clamp(44px,13vw,58px)!important;letter-spacing:-.055em!important}
+  .hero-copy p{font-size:16px!important}
+  .reason-card{height:400px!important;padding:34px 30px!important}
+  .project-grid,.blog-list,.audience-intro,.list{width:calc(100% - 30px)!important}
+  .project-grid{grid-template-columns:1fr!important;gap:56px!important}
+  .project-card:nth-child(even){transform:none!important}
+  .projects-footer{margin-top:68px!important}
+  .framework-visual{height:360px!important;border-radius:18px 18px 18px 150px!important}
+  .blog-row{gap:28px!important;margin-bottom:48px!important}
+  .work-inner{gap:38px!important;min-height:0!important}
+  .hobart-sitemap-footer{padding-top:62px!important}
+}
+</style><style id="work-together-dark-match">
+/* Match the Let's work together section to every other dark section. */
+.work-together,
+#contact-cta{
+  background:#241f21!important;
+  background-color:#241f21!important;
+  background-image:none!important;
+}
+</style><style id="constant-dark-work-section">
+/* Keep the full Let's work together area as one constant dark section. */
+#contact-cta,
+.work-together,
+#contact-cta::before,
+#contact-cta::after,
+.work-together::before,
+.work-together::after,
+#contact-cta .work-inner,
+#contact-cta .work-together-inner,
+.work-together .work-inner,
+.work-together .work-together-inner{
+  background:#241f21!important;
+  background-color:#241f21!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+#contact-cta,
+.work-together{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+#contact-cta::before,
+#contact-cta::after,
+.work-together::before,
+.work-together::after{
+  content:none!important;
+  display:none!important;
+}
+</style><style id="work-client-marquee-and-about-form-update">
+/* New client logo marquee, kept inside the existing dark Let's Work Together continuation. */
+.work-client-marquee{position:relative;z-index:2;margin-top:8px;padding:0 0 42px;color:#fff;overflow:hidden}
+.work-client-marquee-label{width:min(1220px,calc(100% - 72px));margin:0 auto 24px;color:#92a3b2;font:700 13px/1.3 var(--ref-font,'Manrope',Arial,sans-serif);letter-spacing:.12em;text-transform:uppercase}
+.work-client-marquee-viewport{width:100%;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.work-client-marquee-track{display:flex;width:max-content;gap:18px;animation:workClientMarquee 28s linear infinite;will-change:transform}
+.work-client-logo{flex:0 0 220px;height:104px;display:grid;place-items:center;padding:18px;border:1px solid rgba(255,255,255,.16);border-radius:18px;background:rgba(255,255,255,.055);color:rgba(255,255,255,.72);font:800 12px/1.2 var(--ref-font,'Manrope',Arial,sans-serif);letter-spacing:.13em;text-align:center}
+@keyframes workClientMarquee{from{transform:translate3d(calc(-50% - 9px),0,0)}to{transform:translate3d(0,0,0)}}
+/* Exact About Us contact form visual system. */
+#contact-form.connect-section{background:#241f21!important}
+#contact-form .connect-panel{padding:84px max(40px,7vw) 76px!important;background:#fff!important;border-radius:118px 118px 0 0!important}
+#contact-form .connect-head,#contact-form .connect-form{width:min(1120px,100%)!important;margin-inline:auto!important}
+#contact-form .connect-head{margin-bottom:42px!important}
+#contact-form .connect-head h2{margin:0 0 14px!important;font-size:clamp(48px,5vw,72px)!important;line-height:1!important;letter-spacing:-.045em!important}
+#contact-form .connect-head p{margin:0!important;color:#66737d!important;font-size:clamp(19px,1.8vw,26px)!important}
+#contact-form .connect-form{display:grid!important;grid-template-columns:1fr 1fr!important;gap:22px 40px!important}
+#contact-form .connect-field.full,#contact-form .connect-status,#contact-form .connect-actions{grid-column:1/-1!important}
+#contact-form .connect-field label{display:block!important;margin-bottom:8px!important;color:#344550!important;font-size:14px!important;font-weight:700!important}
+#contact-form .connect-field input,#contact-form .connect-field select,#contact-form .connect-field textarea{width:100%!important;min-height:54px!important;padding:14px 16px!important;border:1px solid #cfd6db!important;border-radius:10px!important;background:#fff!important;color:#071725!important;outline:0!important}
+#contact-form .connect-field textarea{min-height:120px!important;resize:vertical!important}
+#contact-form .connect-field input:focus,#contact-form .connect-field select:focus,#contact-form .connect-field textarea:focus{border-color:#f15a26!important;box-shadow:0 0 0 3px rgba(241,90,38,.16)!important}
+#contact-form .connect-phone{display:grid!important;grid-template-columns:118px 1fr!important;gap:12px!important}
+#contact-form .connect-status{color:#bf3d1e!important;font-size:14px!important;font-weight:700!important}
+#contact-form .connect-status:empty{display:none!important}
+#contact-form .connect-status.success{color:#167747!important}
+#contact-form .connect-actions{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:24px!important}
+#contact-form .connect-note{max-width:610px!important;color:#6f7d86!important;font-size:13px!important}
+#contact-form .connect-submit{min-width:210px!important;min-height:58px!important;padding:0 32px!important;border:0!important;border-radius:999px!important;background:#f15a26!important;color:#fff!important;font-size:15px!important;font-weight:800!important;cursor:pointer!important}
+#contact-form .connect-submit:hover{background:#d94a1b!important}
+@media(max-width:680px){
+ .work-client-marquee{padding-bottom:30px}.work-client-marquee-label{width:calc(100% - 32px);margin-bottom:18px}.work-client-logo{flex-basis:172px;height:86px}
+ #contact-form .connect-panel{padding:52px 20px!important;border-radius:48px 48px 0 0!important}
+ #contact-form .connect-form{grid-template-columns:1fr!important}
+ #contact-form .connect-field.full,#contact-form .connect-status,#contact-form .connect-actions{grid-column:1!important}
+ #contact-form .connect-actions{align-items:stretch!important;flex-direction:column!important}
+ #contact-form .connect-submit{width:100%!important}
+}
+@media(prefers-reduced-motion:reduce){.work-client-marquee-track{animation:none;transform:none}}
+</style><style id="four-client-logos-and-company-logo-final">
+.work-client-logo{overflow:hidden!important}.work-client-logo img{display:block;width:100%;height:100%;max-width:170px;max-height:68px;object-fit:contain;object-position:center}
+#contact-form .connect-head{display:grid!important;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr)!important;gap:clamp(36px,6vw,90px)!important;align-items:center!important}
+#contact-form .connect-head-copy{min-width:0}.connect-company-logo{width:100%;height:180px;display:grid;place-items:center;border:1px dashed #cbd3d9;border-radius:22px;background:#f7f9fa;overflow:hidden}.connect-company-logo img{display:block;width:82%;height:72%;object-fit:contain;object-position:center}
+@media(max-width:760px){#contact-form .connect-head{grid-template-columns:1fr!important;gap:26px!important}.connect-company-logo{height:140px}}
+</style><style id="hero-overlay-shadow-and-filled-logo-marquee-final">
+/* Requested hero adjustment: reduce video brightness and improve white-text contrast. */
+.hero::after{
+  background:linear-gradient(180deg,rgba(20,16,17,.58) 0%,rgba(20,16,17,.46) 43%,rgba(20,16,17,.62) 100%)!important;
+  z-index:1!important;
+  pointer-events:none!important;
+}
+.hero-bg{z-index:0!important;filter:brightness(.82)!important}
+.hero .hero-copy,.hero .hero-actions,.hero .hero-note,.hero .nav{position:relative;z-index:3}
+.hero h1{ text-shadow:0 4px 18px rgba(0,0,0,.62),0 1px 3px rgba(0,0,0,.8)!important }
+.hero-copy p,.hero-note{ text-shadow:0 3px 12px rgba(0,0,0,.68),0 1px 2px rgba(0,0,0,.82)!important }
+.hero .btn,.hero .nav-links>a:not(.phone){text-shadow:0 2px 7px rgba(0,0,0,.6)!important}
+
+/* The marquee viewport is filled from the first frame. Four logos form one complete visible row. */
+.work-client-marquee-viewport{
+  overflow:hidden!important;
+  mask-image:none!important;
+  -webkit-mask-image:none!important;
+}
+.work-client-marquee-track{
+  display:flex!important;
+  width:max-content!important;
+  min-width:calc(200vw + 36px)!important;
+  gap:18px!important;
+  transform:translate3d(calc(-50% - 9px),0,0);
+  animation:workClientMarqueeFilled 28s linear infinite!important;
+}
+.work-client-logo{
+  flex:0 0 calc((100vw - 54px)/4)!important;
+  max-width:none!important;
+}
+@keyframes workClientMarqueeFilled{
+  from{transform:translate3d(calc(-50% - 9px),0,0)}
+  to{transform:translate3d(0,0,0)}
+}
+@media(max-width:680px){
+ .work-client-logo{flex-basis:calc((100vw - 36px)/3)!important}
+ .work-client-marquee-track{min-width:calc(266.666vw + 54px)!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .work-client-marquee-track{animation:none!important;transform:translate3d(calc(-50% - 9px),0,0)!important}
+}
+</style><style id="pure-client-logos-only-final">
+/* Client logos only: no card, border, tint, padding or background. */
+.work-client-logo{
+  height:132px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  color:transparent!important;
+  overflow:visible!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+.work-client-logo img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:82%!important;
+  max-height:104px!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  background:transparent!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+@media(max-width:680px){
+ .work-client-logo{height:104px!important}
+ .work-client-logo img{max-width:86%!important;max-height:82px!important}
+}
+</style><style id="bottom-sections-alignment-update">
+/* Desktop: align the Let's work together heading with the top of the right-side copy. */
+@media (min-width:981px){
+  #contact-cta .work-inner{
+    align-items:start!important;
+  }
+  #contact-cta .work-title{
+    position:relative!important;
+    top:-8px!important;
+    align-self:start!important;
+  }
+  #contact-cta .work-copy{
+    align-self:start!important;
+  }
+  /* Start contact details beneath the left curve of the pill button. */
+  #contact-cta .work-contact{
+    padding-left:34px!important;
+  }
+  /* Lift the company logo block to align better with the contact heading. */
+  #contact-form .connect-company-logo{
+    position:relative!important;
+    top:-18px!important;
+  }
+}
+@media (min-width:681px) and (max-width:980px){
+  #contact-cta .work-title{
+    position:relative!important;
+    top:-4px!important;
+  }
+  #contact-cta .work-contact{
+    padding-left:26px!important;
+  }
+  #contact-form .connect-company-logo{
+    position:relative!important;
+    top:-12px!important;
+  }
+}
+@media (max-width:680px){
+  #contact-cta .work-title{top:0!important}
+  #contact-cta .work-contact{padding-left:0!important}
+  #contact-form .connect-company-logo{top:0!important}
+}
+</style><style id="transparent-form-logo-and-alignment-final">
+/* Remove every visual container treatment behind the form company logo. */
+#contact-form .connect-head{
+  align-items:start!important;
+}
+#contact-form .connect-company-logo{
+  position:relative!important;
+  top:0!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:flex-start!important;
+  place-items:unset!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  outline:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+#contact-form .connect-company-logo::before,
+#contact-form .connect-company-logo::after{
+  content:none!important;
+  display:none!important;
+}
+#contact-form .connect-company-logo img{
+  display:block!important;
+  width:min(100%,335px)!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  object-position:left top!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+/* Make the top-left brand logo clearly interactive. */
+.nav .logo{cursor:pointer!important}
+.nav .logo:focus-visible{outline:3px solid rgba(241,90,38,.68)!important;outline-offset:5px!important}
+@media(max-width:760px){
+  #contact-form .connect-company-logo{justify-content:flex-start!important}
+  #contact-form .connect-company-logo img{width:min(100%,280px)!important}
+}
+</style><style id="gap-half-and-client-marquee-reverse-final">
+  /* Reduce the visual gap between the overlapping Experience card and the process-card rail by 50%. */
+  .reasons .reason-head.shell{
+    margin-bottom:46px!important;
+  }
+
+  /* Reverse the existing client-logo marquee without changing its size, speed, logos or layout. */
+  .work-client-marquee-track{
+    animation-direction:reverse!important;
+  }
+
+  @media(max-width:900px){
+    .reasons .reason-head.shell{
+      margin-bottom:34px!important;
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    .work-client-marquee-track{
+      animation-direction:reverse!important;
+    }
+  }
+</style><style id="homepage-ending-contact-base">
+#contact-cta{margin-top:0!important}
+#contact-form.connect-section{width:100%;margin:0;padding:0;background:#241f21;color:#071725;overflow:hidden}
+#contact-form .connect-panel{width:100%;margin:0;background:#fff}
+#contact-form .connect-head{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:clamp(36px,6vw,90px);align-items:start}
+#contact-form .connect-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(28px,3.2vw,44px);row-gap:clamp(18px,2.4vh,24px)}
+#contact-form .connect-field{position:relative;min-width:0}
+#contact-form .connect-field.full,#contact-form .connect-status,#contact-form .connect-actions{grid-column:1/-1}
+#contact-form .connect-field label{display:block;margin:0 0 8px;color:#344550;font-size:14px;line-height:1.25;font-weight:700}
+#contact-form .connect-field input,#contact-form .connect-field select,#contact-form .connect-field textarea{width:100%;min-height:54px;padding:14px 16px;border:1px solid #cfd6db;border-radius:10px;background:#fff;color:#071725;font-size:16px;line-height:1.4;outline:none}
+#contact-form .connect-field textarea{min-height:120px;resize:vertical}
+#contact-form .connect-phone{display:grid;grid-template-columns:118px minmax(0,1fr);gap:12px}
+#contact-form .connect-actions{display:flex;align-items:center;justify-content:space-between;gap:24px}
+#contact-form .connect-note{max-width:610px;color:#6f7d86;font-size:13px;line-height:1.45}
+#contact-form .connect-submit{min-width:210px;min-height:58px;padding:0 32px;border:0;border-radius:999px;background:#f15a26;color:#fff;font-size:15px;font-weight:800;cursor:pointer}
+@media(max-width:720px){#contact-form .connect-head,#contact-form .connect-form{grid-template-columns:1fr!important}#contact-form .connect-field.full,#contact-form .connect-status,#contact-form .connect-actions{grid-column:1!important}#contact-form .connect-actions{align-items:stretch;flex-direction:column}#contact-form .connect-submit{width:100%}}
+</style><style id="footer-exact-homepage-colour-fix">
+/* Keep the complete bottom footer in the exact homepage dark colour. */
+#hobart-sitemap-footer,
+.hobart-sitemap-footer,
+#hobart-sitemap-footer .hobart-sitemap-grid,
+#hobart-sitemap-footer .hobart-sitemap-bottom{
+  background:#031425!important;
+  background-color:#031425!important;
+  background-image:none!important;
+}
+#hobart-sitemap-footer::before{
+  background:radial-gradient(ellipse at 55% 55%,rgba(241,90,38,.2),transparent 58%),repeating-radial-gradient(ellipse at 55% 55%,rgba(255,255,255,.16) 0 1px,transparent 1px 18px)!important;
+}
+</style><style id="contact-page-spacing-and-footer-final">
+/* Match the complete footer to the FAQ charcoal and tighten excessive vertical gaps. */
+#hobart-sitemap-footer,
+.hobart-sitemap-footer,
+#hobart-sitemap-footer .hobart-sitemap-grid,
+#hobart-sitemap-footer .hobart-sitemap-bottom{
+  background:#241f21!important;
+  background-color:#241f21!important;
+  background-image:none!important;
+}
+#hobart-sitemap-footer::before{opacity:.09!important}
+
+/* Primary form to Locations: remove the oversized white gap. */
+#contact-enquiry.contact-form-section{padding-bottom:38px!important}
+.locations-section{padding-top:46px!important;padding-bottom:72px!important}
+.locations-head{margin-bottom:52px!important}
+
+/* Locations to FAQ: keep the curve close to the location content. */
+.contact-faq{padding-top:104px!important;padding-bottom:82px!important}
+.contact-faq-head{margin-bottom:50px!important}
+
+/* FAQ, CTA, logo rail, second form and footer spacing. */
+#contact-cta.work-together{padding-top:82px!important;padding-bottom:72px!important}
+#contact-cta .work-inner{min-height:340px!important;gap:82px!important}
+#contact-cta .work-client-marquee{margin-top:0!important;padding-bottom:26px!important}
+#contact-cta .work-client-marquee-label{margin-bottom:14px!important}
+#contact-form .connect-panel{padding-top:66px!important;padding-bottom:60px!important}
+#contact-form .connect-head{margin-bottom:30px!important}
+#hobart-sitemap-footer{padding-top:62px!important}
+#hobart-sitemap-footer .hobart-sitemap-grid{padding-bottom:50px!important}
+#hobart-sitemap-footer .hobart-sitemap-bottom{min-height:76px!important}
+
+@media(max-width:860px){
+ #contact-enquiry.contact-form-section{padding-bottom:28px!important}
+ .locations-section{padding-top:38px!important;padding-bottom:60px!important}
+ .locations-head{margin-bottom:44px!important}
+ .contact-faq{padding-top:88px!important;padding-bottom:70px!important}
+ #contact-cta.work-together{padding-top:70px!important;padding-bottom:62px!important}
+ #contact-cta .work-inner{min-height:0!important;gap:38px!important}
+ #contact-form .connect-panel{padding-top:56px!important;padding-bottom:54px!important}
+ #hobart-sitemap-footer{padding-top:54px!important}
+}
+@media(max-width:680px){
+ #contact-enquiry.contact-form-section{padding-bottom:22px!important}
+ .locations-section{padding-top:32px!important;padding-bottom:50px!important}
+ .locations-head{margin-bottom:38px!important}
+ .contact-faq{padding-top:70px!important;padding-bottom:58px!important}
+ .contact-faq-head{margin-bottom:34px!important}
+ #contact-cta.work-together{padding-top:58px!important;padding-bottom:50px!important}
+ #contact-cta .work-client-marquee{padding-bottom:18px!important}
+ #contact-form .connect-panel{padding-top:48px!important;padding-bottom:46px!important}
+ #hobart-sitemap-footer{padding-top:46px!important}
+ #hobart-sitemap-footer .hobart-sitemap-grid{padding-bottom:40px!important}
+ #hobart-sitemap-footer .hobart-sitemap-bottom{min-height:68px!important}
+}
+</style></head>
+<body>
+<section class="contact-hero">
+<video autoplay="" class="hero-bg" loop="" muted="" playsinline=""><source src="assets/videos/hero-bg.mp4" type="video/mp4"/></video>
+<nav class="nav shell"><a aria-label="IT Services Hobart home" class="logo" href="index.html"><img alt="IT Services Hobart" class="navbar-brand-logo" src="assets/images/logo-it-services-hobart.webp"/></a><div class="nav-links"><a href="index.html">Home</a><a aria-controls="services-mega-menu" aria-expanded="false" class="services-trigger" href="index.html#services">Services<span aria-hidden="true" class="nav-chevron"><svg aria-hidden="true" fill="none" height="7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 12 8" width="11"><polyline points="1.5 1.75 6 6.25 10.5 1.75"></polyline></svg></span></a><a href="about-us.html">About Us</a><a href="index.html#blog-insights">Blogs</a><a href="contact-us.html">Contact</a><a class="phone" href="tel:0410576590">☎  0410 576 590</a></div><button aria-expanded="false" aria-label="Toggle navigation" class="nav-mobile-toggle" type="button">☰</button><div aria-hidden="true" class="services-mega" id="services-mega-menu"><div aria-label="Service categories" class="mega-category-list" role="tablist"><button class="mega-category is-active" data-mega-tab="plan" type="button"><span class="mega-icon">P</span><span>Plan &amp; Strategy</span><b>→</b></button><button class="mega-category" data-mega-tab="build" type="button"><span class="mega-icon">B</span><span>Build &amp; Develop</span><b>→</b></button><button class="mega-category" data-mega-tab="growth" type="button"><span class="mega-icon">G</span><span>Digital Growth</span><b>→</b></button><button class="mega-category" data-mega-tab="integrate" type="button"><span class="mega-icon">I</span><span>Integrate &amp; Modernise</span><b>→</b></button><button class="mega-category" data-mega-tab="support" type="button"><span class="mega-icon">S</span><span>Support &amp; Scale</span><b>→</b></button></div><div class="mega-content">
+<div class="mega-panel is-active" data-mega-panel="plan"><a href="index.html#services"><span class="mega-service-icon">◌</span><span><strong>Technology Consulting</strong><small>Practical advice for Hobart businesses</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">◇</span><span><strong>Product Planning</strong><small>Scope, roadmap and delivery priorities</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">▦</span><span><strong>UX &amp; UI Design</strong><small>Clear experiences for websites and apps</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">◎</span><span><strong>Digital Strategy</strong><small>A focused plan for sustainable growth</small></span><i>→</i></a></div>
+<div class="mega-panel" data-mega-panel="build"><a href="index.html#services"><span class="mega-service-icon">⌘</span><span><strong>Web Development</strong><small>Fast, scalable business websites</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">▣</span><span><strong>Web Applications</strong><small>Purpose-built browser-based systems</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">◫</span><span><strong>Mobile App Development</strong><small>iOS and Android app experiences</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">⚙</span><span><strong>Software Development</strong><small>Reliable tools shaped around operations</small></span><i>→</i></a></div>
+<div class="mega-panel" data-mega-panel="growth"><a href="index.html#services"><span class="mega-service-icon">↗</span><span><strong>Search Engine Optimisation</strong><small>Improve visibility in local search</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">✦</span><span><strong>Branding &amp; Creative</strong><small>Consistent identity across every channel</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">◉</span><span><strong>Digital Marketing</strong><small>Campaigns built to attract real enquiries</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">▥</span><span><strong>Content &amp; Social</strong><small>Useful content that supports conversion</small></span><i>→</i></a></div>
+<div class="mega-panel" data-mega-panel="integrate"><a href="index.html#services"><span class="mega-service-icon">⇄</span><span><strong>System Integration</strong><small>Connect the tools your team relies on</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">⌁</span><span><strong>CRM &amp; POS Solutions</strong><small>Unify customer and sales workflows</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">☁</span><span><strong>Cloud Migration</strong><small>Move systems securely with less disruption</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">✉</span><span><strong>Business Email &amp; Hosting</strong><small>Managed, secure and dependable setup</small></span><i>→</i></a></div>
+<div class="mega-panel" data-mega-panel="support"><a href="index.html#services"><span class="mega-service-icon">✓</span><span><strong>Ongoing Support</strong><small>Responsive help whenever it is needed</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">⌁</span><span><strong>Website Maintenance</strong><small>Updates, monitoring and improvements</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">◆</span><span><strong>Security &amp; Backups</strong><small>Protect essential systems and information</small></span><i>→</i></a><a href="index.html#services"><span class="mega-service-icon">⚡</span><span><strong>Onsite Technical Support</strong><small>Local assistance across Hobart</small></span><i>→</i></a></div></div>
+<a class="mega-visual" href="index.html#featured-projects"><div class="mega-placeholder is-active" data-mega-visual="plan"><img alt="" aria-hidden="true" class="mega-project-thumbnail" src="assets/images/mega-strategy-planning.png"/><span>Strategy &amp; Planning</span></div><div class="mega-placeholder" data-mega-visual="build"><img alt="" aria-hidden="true" class="mega-project-thumbnail" src="assets/images/mega-web-app-development.png"/><span>Web &amp; App Development</span></div><div class="mega-placeholder" data-mega-visual="growth"><img alt="" aria-hidden="true" class="mega-project-thumbnail" src="assets/images/mega-digital-growth.png"/><span>Digital Growth</span></div><div class="mega-placeholder" data-mega-visual="integrate"><img alt="" aria-hidden="true" class="mega-project-thumbnail" src="assets/images/mega-connected-business-systems.png"/><span>Connected Business Systems</span></div><div class="mega-placeholder" data-mega-visual="support"><img alt="" aria-hidden="true" class="mega-project-thumbnail mega-support-thumbnail" src="assets/images/mega-support-maintenance.png"/><span>Support &amp; Maintenance</span></div><span class="mega-visual-arrow">↗</span></a></div></nav>
+<div class="contact-hero-content">
+<h1 class="contact-title">Let’s Talk</h1>
+<a aria-label="Go to contact form" class="contact-arrow" href="#contact-enquiry">↓</a>
+<a class="hero-talk" href="#contact-enquiry">LET’S TALK</a>
+</div>
+</section>
+<section class="contact-form-section" id="contact-enquiry">
+<div class="contact-panel">
+<h2>Let’s Connect!</h2>
+<p class="contact-intro">Use the form below, call <a href="tel:0410576590">0410 576 590</a>, or send us an email at <a href="mailto:info@itserviceshobart.com.au">info@itserviceshobart.com.au</a>.</p>
+<form class="contact-form" id="contactForm" novalidate="">
+<div class="field"><label for="purpose">Purpose of Contact</label><select id="purpose" name="purpose" required=""><option value="">Select a service</option><option>Web Development</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Business Email &amp; Hosting</option><option>Onsite Technical Support</option><option>General Enquiry</option></select></div>
+<div class="field"><label for="name">Your Name</label><input autocomplete="name" id="name" name="name" required=""/></div>
+<div class="field"><label for="email">Your Email</label><input autocomplete="email" id="email" name="email" required="" type="email"/></div>
+<div class="field"><label for="phone">Your Phone</label><div class="phone-row"><select aria-label="Country code" name="countryCode"><option value="+61">AU +61</option><option value="+91">IN +91</option><option value="+64">NZ +64</option></select><input autocomplete="tel" id="phone" name="phone" placeholder="0410 576 590" type="tel"/></div></div>
+<div class="field full"><label for="project">Tell us about your project</label><textarea id="project" name="project" required=""></textarea></div>
+<div aria-live="polite" class="form-status" id="formStatus"></div>
+<button class="send-button" type="submit">SEND REQUEST</button>
+</form>
+</div>
+</section><section class="locations-section" id="location">
+<div class="locations-shell">
+<div class="locations-head">
+<h2>Locations</h2>
+<p>Local IT support and digital services for businesses in Hobart and Pakenham.</p>
+</div>
+<div class="locations-grid">
+<article class="location-item">
+<h3>Hobart</h3>
+<address>Level 1, 111 Macquarie Street,<br/>Hobart TAS 7000</address>
+<div class="location-links">
+<a href="tel:0410576590">0410 576 590</a>
+<a href="mailto:info@itserviceshobart.com.au">info@itserviceshobart.com.au</a>
+</div>
+</article>
+<article class="location-item">
+<h3>Pakenham</h3>
+<address>37 Main St Pakenham,<br/>VIC 3810</address>
+<div class="location-links">
+<a href="tel:0361446433">03 6144 6433</a>
+<a href="mailto:info@itserviceshobart.com.au">info@itserviceshobart.com.au</a>
+</div>
+</article>
+</div>
+</div>
+</section><section class="contact-faq" id="faq">
+<div class="contact-faq-shell">
+<div class="contact-faq-head">
+<h2>FAQ</h2>
+<p>Common questions about contacting IT Services Hobart and getting your project started.</p>
+</div>
+<div class="contact-faq-list">
+<article class="contact-faq-item is-open">
+<button aria-expanded="true" class="contact-faq-question" type="button"><span class="contact-faq-number">01</span><span>What services can I contact IT Services Hobart about?</span><span aria-hidden="true" class="contact-faq-icon"></span></button>
+<div class="contact-faq-answer"><div class="contact-faq-answer-inner"><p>You can contact us about web development, software development, mobile app development, digital marketing, business email and hosting, and onsite technical support.</p></div></div>
+</article>
+<article class="contact-faq-item">
+<button aria-expanded="false" class="contact-faq-question" type="button"><span class="contact-faq-number">02</span><span>Which areas do you serve?</span><span aria-hidden="true" class="contact-faq-icon"></span></button>
+<div class="contact-faq-answer"><div class="contact-faq-answer-inner"><p>We support businesses through our Hobart office at Level 1, 111 Macquarie Street, Hobart TAS 7000, and our Pakenham office at 37 Main St, Pakenham VIC 3810.</p></div></div>
+</article>
+<article class="contact-faq-item">
+<button aria-expanded="false" class="contact-faq-question" type="button"><span class="contact-faq-number">03</span><span>How can I reach your team directly?</span><span aria-hidden="true" class="contact-faq-icon"></span></button>
+<div class="contact-faq-answer"><div class="contact-faq-answer-inner"><p>Call 0410 576 590, call the landline on 03 6144 6433, or email info@itserviceshobart.com.au.</p></div></div>
+</article>
+<article class="contact-faq-item">
+<button aria-expanded="false" class="contact-faq-question" type="button"><span class="contact-faq-number">04</span><span>What information should I include in my enquiry?</span><span aria-hidden="true" class="contact-faq-icon"></span></button>
+<div class="contact-faq-answer"><div class="contact-faq-answer-inner"><p>Include the service you need, your business goals, the problem you want to solve, any preferred timeframe, and your best contact details. This helps the team understand the request before responding.</p></div></div>
+</article>
+<article class="contact-faq-item">
+<button aria-expanded="false" class="contact-faq-question" type="button"><span class="contact-faq-number">05</span><span>Can I enquire about ongoing support?</span><span aria-hidden="true" class="contact-faq-icon"></span></button>
+<div class="contact-faq-answer"><div class="contact-faq-answer-inner"><p>Yes. Use the contact form for ongoing website maintenance, business email and hosting, security and backups, or onsite technical support.</p></div></div>
+</article>
+</div>
+</div>
+</section><section class="work-together" id="contact-cta">
+<div class="work-inner">
+<h2 class="work-title"><strong>Let’s work</strong> together</h2>
+<div class="work-copy">
+<p>Your idea. Our expertise. Built for Hobart. Have an idea in mind? Talk to our Hobart team today.</p>
+<a class="work-cta" href="mailto:info@itserviceshobart.com.au?subject=Project%20Enquiry">TALK TO OUR HOBART TEAM</a>
+<div class="work-contact"><a href="tel:0410576590">0410 576 590</a><a href="mailto:info@itserviceshobart.com.au">info@itserviceshobart.com.au</a></div>
+</div>
+</div>
+<div aria-label="Clients we have worked with" class="work-client-marquee">
+<div class="work-client-marquee-label">Trusted by businesses we have worked with</div>
+<div class="work-client-marquee-viewport">
+<div class="work-client-marquee-track">
+<div class="work-client-logo"><img alt="Client logo 1" src="assets/images/client-logo-01.png"/></div><div class="work-client-logo"><img alt="Client logo 2" src="assets/images/client-logo-02.png"/></div><div class="work-client-logo"><img alt="Client logo 3" src="assets/images/client-logo-03.png"/></div><div class="work-client-logo"><img alt="Client logo 4" src="assets/images/client-logo-04.png"/></div>
+<div aria-hidden="true" class="work-client-logo"><img alt="" src="assets/images/client-logo-01.png"/></div><div aria-hidden="true" class="work-client-logo"><img alt="" src="assets/images/client-logo-02.png"/></div><div aria-hidden="true" class="work-client-logo"><img alt="" src="assets/images/client-logo-03.png"/></div><div aria-hidden="true" class="work-client-logo"><img alt="" src="assets/images/client-logo-04.png"/></div>
+</div>
+</div>
+</div>
+</section><section class="connect-section" id="contact-form"><div class="connect-panel"><div class="connect-head"><div class="connect-head-copy"><h2>Build Something That Actually Works</h2><p>Free 30-minute consultation. We'll look at your current setup. No pitch. No obligation.</p></div><div class="connect-company-logo"><img alt="Company logo" src="assets/images/contact-company-logo.png"/></div></div><form class="connect-form" id="connectForm" novalidate=""><div class="connect-field"><label for="contactPurpose">Purpose of Contact</label><select id="contactPurpose" name="purpose" required=""><option value="">Select a service</option><option>Web Development</option><option>Mobile App Development</option><option>Digital Marketing</option><option>Business Email &amp; Hosting</option><option>Onsite Technical Support</option><option>General Enquiry</option></select></div><div class="connect-field"><label for="contactName">Your Name</label><input autocomplete="name" id="contactName" name="name" required=""/></div><div class="connect-field"><label for="contactEmail">Your Email</label><input autocomplete="email" id="contactEmail" name="email" required="" type="email"/></div><div class="connect-field"><label for="contactPhone">Your Phone</label><div class="connect-phone"><select aria-label="Country code" name="countryCode"><option value="+61">AU +61</option><option value="+91">IN +91</option><option value="+64">NZ +64</option></select><input autocomplete="tel" id="contactPhone" inputmode="tel" name="phone" placeholder="0410 576 590" type="tel"/></div></div><div class="connect-field full"><label for="contactProject">Tell us about your project</label><textarea id="contactProject" name="project" required=""></textarea></div><div aria-live="polite" class="connect-status" id="connectStatus"></div><div class="connect-actions"><div class="connect-note">By submitting this form, you agree that IT Services Hobart may contact you about this enquiry.</div><button class="connect-submit" type="submit">SEND ENQUIRY</button></div></form></div></section><footer class="hobart-sitemap-footer" id="hobart-sitemap-footer">
+<div class="hobart-sitemap-grid">
+<div class="hobart-sitemap-col hobart-office">
+<h3>Hobart Office</h3>
+<p>Local IT expertise for businesses across Hobart and Southern Tasmania.</p>
+<img alt="IT Services Hobart" class="hobart-footer-logo" src="assets/images/logo-it-services-hobart.webp"/>
+<a class="contact-link" href="tel:0410576590">0410 576 590</a>
+<a class="contact-link" href="mailto:info@itserviceshobart.com.au">info@itserviceshobart.com.au</a>
+</div>
+<div class="hobart-sitemap-col"><h3>About Us</h3><a href="about-us.html">About IT Services Hobart</a><a href="index.html#featured-projects">Featured Projects</a><a href="index.html#client-voices">Client Voices</a><a href="index.html#blog-insights">Blog</a><a href="contact-us.html">Contact</a></div>
+<div class="hobart-sitemap-col"><h3>Services</h3><a href="index.html#services">Web Development</a><a href="index.html#services">Mobile App Development</a><a href="index.html#services">Digital Marketing</a><a href="index.html#services">Business Email &amp; Hosting</a><a href="index.html#services">Onsite Technical Support</a></div>
+<div class="hobart-sitemap-col"><h3>Who We Help</h3><a href="index.html#who-we-help">Startups &amp; New Ventures</a><a href="index.html#who-we-help">Local Small Businesses</a><a href="index.html#who-we-help">Growing Service Teams</a><a href="index.html#who-we-help">Established Organisations</a></div>
+<div class="hobart-sitemap-col"><h3>Project Roadmap</h3><a href="index.html#delivery-framework">Discovery &amp; Planning</a><a href="index.html#delivery-framework">Strategy &amp; Architecture</a><a href="index.html#delivery-framework">Design &amp; Development</a><a href="index.html#delivery-framework">Testing &amp; Quality Assurance</a><a href="index.html#delivery-framework">Launch, Support &amp; Maintenance</a><a href="#">Privacy Policy</a></div>
+</div>
+<div class="hobart-sitemap-bottom">© Copyright 2026 <strong> IT Service Hobart. </strong> All Rights Reserved.</div>
+</footer>
+<script id="services-mega-menu-script">(()=>{const n=document.querySelector('nav.nav'),t=n?.querySelector('.services-trigger'),m=n?.querySelector('.services-mega'),b=n?.querySelector('.nav-mobile-toggle');if(!n||!t||!m)return;let x;const o=()=>{clearTimeout(x);n.classList.add('is-mega-open');t.setAttribute('aria-expanded','true');m.setAttribute('aria-hidden','false')},c=()=>{n.classList.remove('is-mega-open');t.setAttribute('aria-expanded','false');m.setAttribute('aria-hidden','true')},a=k=>{n.querySelectorAll('.mega-category').forEach(e=>e.classList.toggle('is-active',e.dataset.megaTab===k));n.querySelectorAll('.mega-panel').forEach(e=>e.classList.toggle('is-active',e.dataset.megaPanel===k));n.querySelectorAll('.mega-placeholder').forEach(e=>e.classList.toggle('is-active',e.dataset.megaVisual===k))};t.addEventListener('mouseenter',o);t.addEventListener('focus',o);t.addEventListener('click',e=>{e.preventDefault();n.classList.contains('is-mega-open')?c():o()});m.addEventListener('mouseenter',o);m.addEventListener('mouseleave',()=>x=setTimeout(c,140));n.querySelectorAll('.mega-category').forEach(e=>['mouseenter','focus','click'].forEach(v=>e.addEventListener(v,()=>a(e.dataset.megaTab))));b?.addEventListener('click',()=>{const q=n.classList.toggle('is-mobile-open');b.textContent=q?'×':'☰'});document.addEventListener('click',e=>{if(!n.contains(e.target))c()});document.addEventListener('keydown',e=>{if(e.key==='Escape')c()})})();</script>
+<script id="final-services-menu-blur-state-controller">
+(()=>{
+  const nav=document.querySelector('nav.nav');
+  if(!nav)return;
+  const sync=()=>{
+    document.body.classList.toggle(
+      'mega-menu-background-blur',
+      nav.classList.contains('is-mega-open')
+    );
+  };
+  new MutationObserver(sync).observe(nav,{attributes:true,attributeFilter:['class']});
+  sync();
+})();
+</script>
+<script>
+(()=>{const form=document.getElementById('contactForm'),status=document.getElementById('formStatus');form.addEventListener('submit',e=>{e.preventDefault();status.classList.remove('success');const p=form.elements.purpose,n=form.elements.name,m=form.elements.email,d=form.elements.project;if(!p.value){status.textContent='Please select the purpose of contact.';p.focus();return}if(!n.value.trim()){status.textContent='Please enter your name.';n.focus();return}if(!m.value.trim()||!m.validity.valid){status.textContent='Please enter a valid email address.';m.focus();return}if(!d.value.trim()){status.textContent='Please tell us about your project.';d.focus();return}status.textContent='Your request is ready. Connect this form to your website email or CRM endpoint before launch.';status.classList.add('success')});form.addEventListener('input',()=>{status.textContent='';status.classList.remove('success')})})();
+</script>
+<script id="contact-faq-hover-script">(()=>{
+ const items=[...document.querySelectorAll('.contact-faq-item')];
+ const activate=item=>{items.forEach(other=>{const on=other===item;other.classList.toggle('is-open',on);other.querySelector('.contact-faq-question')?.setAttribute('aria-expanded',String(on))})};
+ items.forEach(item=>{const button=item.querySelector('.contact-faq-question');item.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')activate(item)});button?.addEventListener('focus',()=>activate(item));button?.addEventListener('click',()=>activate(item))});
+})();</script><script>
+(()=>{const form=document.getElementById('connectForm'),status=document.getElementById('connectStatus');if(!form||!status)return;form.addEventListener('submit',e=>{e.preventDefault();status.classList.remove('success');const purpose=form.elements.purpose,name=form.elements.name,email=form.elements.email,project=form.elements.project;if(!purpose.value){status.textContent='Please select the purpose of contact.';purpose.focus();return}if(!name.value.trim()){status.textContent='Please enter your name.';name.focus();return}if(!email.value.trim()||!email.validity.valid){status.textContent='Please enter a valid email address.';email.focus();return}if(!project.value.trim()){status.textContent='Please tell us a little about your project.';project.focus();return}status.textContent='Your enquiry is ready. Connect this form to the site email or CRM endpoint before launch.';status.classList.add('success')});form.addEventListener('input',()=>{status.textContent='';status.classList.remove('success')})})();
+</script></body></html>
